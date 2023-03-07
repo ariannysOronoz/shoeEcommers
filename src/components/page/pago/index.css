@@ -1,14 +1,23 @@
 .metodoPago{
-    font-size: 2.4rem;
-    padding: 10rem 0 0 0;
-    color: #08a05c;
-    
-      
+    padding: 140px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: green; 
+    font-size: 40px;   
 }
 
 .tipoPago{
-    width: 100%;
-    margin: 0 auto;
-    width: 97%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 10%;
+    height: 1px; 
+     
 }
+
+.btnCartao:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
