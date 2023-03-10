@@ -4,11 +4,12 @@ import { useParams } from "react-router-dom";
 import { ProductoItem } from "./ProductoItem";
 
 export const ProductosDetalles = () => {
+  
   const value = useContext(DataContext);
   const [productos] = value.productos;
   const addCarrito = value.addCarrito;
   const [detalle, setDetalle] = useState([])
-  const [url, setUrl]= useState(0)
+  const [url, setUrl] = useState(0)
   const [images, setImages] = useState('')
   const params = useParams();
   let item = 0;
@@ -29,11 +30,12 @@ export const ProductosDetalles = () => {
   useEffect(() =>{
     const values = `${detalle.img1}${url}${detalle.img2}`;
     setImages(values) 
-  },[url, params.id])
+  },[url, params.id]) 
 
+  //?
   const handleInput = (e) =>{
-  const number = e.target.value.toString().padStart(2,'01')
-   setUrl(number)
+    const number = e.target.value.toString().padStart(2,'01')
+    setUrl(number)
   }
 
   if(detalle.length < 1) return null;
