@@ -2,6 +2,7 @@ import React, { useContext} from "react";
 import { DataContext } from "context/DataProvider";
 import { Link } from "react-router-dom";
 import Nike from "images/Nike.jpg";
+import './index.css';
 
 
 export const Header = () => {
@@ -18,15 +19,15 @@ export const Header = () => {
   return (
     <header>
       <div className="menu">
-      <box-icon name="menu"></box-icon>
+        <box-icon name="menu"></box-icon>
       </div>
       <Link to="/">
-      <div className="logo">
-        <img src={Nike} alt="Nike" width="150" />
-      </div>
+        <div className="logo">
+          <img src={Nike} alt="Nike" width="150" />
+        </div>
       </Link>
       <ul>
-        <li>
+        <li> 
           <Link to="/">INICIO</Link>
         </li>
         <li>

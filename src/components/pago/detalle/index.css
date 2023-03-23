@@ -1,75 +1,23 @@
-.metodoPago{
-    padding: 160px 0px;
+
+.App-payment{
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    color: green; 
-    font-size: 40px;   
+    flex-direction: column;
 }
 
-.listaPagos{
-  flex: 1;
-  flex-direction: column;
-  background-color: red;
-}
-.agregarPago{
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  background-color: blueviolet;
-  justify-content: center;
-  align-items: center;
-}
 
-.tipoPago{
-  display: flex;
-  flex-direction: row;
-}
-
-.imgCartao{
-  width: 100px;
-  height: 100px;
-}
-
-.btnCartao{
-  display: flex;
-  background-color: #64e800;
-  font-size: 20px;
-} 
-
-.btnCartao:active{
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-
-.btnCartao:hover {
-    background-color: #3e8e41
-}
-
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
-  
-input {
-    margin-top: 1%;
-    margin-left: 1%;
-    font-family: Montserrat, sans-serif;
-    padding: 0.5%;
-    /* border-radius: 7em; */
-    /* background-color: #ccd5fc; Green */
-    /* border: 0; */
-  }
-  
 .btnCardDetails {
+    display: flex;
+    justify-content: center;
     font-family: Montserrat, sans-serif;
     transition-duration: 0.7s;
-    margin-top: 2px;
-    margin-left: 700px;
-    height: 3em;
-    width: 7em;
+    height: 30px;
+    width: 70px;
     color: white;
     background-color: #7589eb;
-    border-radius: 7em;
+    border-radius: 150px;
     border: 0;
+    align-items: center;
+    font-weight: 600;
 }
 
 .btnCardDetails:hover {
@@ -78,6 +26,21 @@ input {
     border-radius: 7em;
 }
 
+  .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5%;
+  }
+  
+  .form-actions{
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
 /*--------------------------------------------------------------*/
 
 .rccs{
@@ -85,14 +48,6 @@ input {
     justify-content: left;   
     perspective: 1000px;
     width: 290px;
-}
-
-.App-payment{
-    display: flex;
-    justify-content: center ;   
-    flex-direction: column;
-    margin: 0px;
-    padding-top: 150px;
 }
 
 .rccs {
@@ -362,13 +317,3 @@ input {
     font-weight: 700;
     opacity: 1 !important;
   }
-
-  .form-group{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-  }
-  
-
-  
-

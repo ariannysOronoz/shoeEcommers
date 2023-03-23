@@ -2,12 +2,11 @@ import React, {useContext, useEffect, useState} from "react";
 import Card from 'react-credit-cards-2'
 import './index.css';
 import { Link } from "react-router-dom";
-
 import {
   formatCreditCardNumber,
   formatCVC,
   formatExpirationDate
-} from './utils'
+} from '../utils'
 
 import { DataContext } from "context/DataProvider";
 
@@ -143,9 +142,6 @@ export const CardDetails = () => {
               <button className='btnCardDetails'>Submit</button>
             </div>
           </form>
-          <Link to='/pago/listaTarjetas'>
-                <button className='btnLista'>Mostar Tarjetas</button>
-            </Link>
         </div>
       </div>
     )

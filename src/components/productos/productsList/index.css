@@ -1,0 +1,8 @@
+/*----------- PRODUCTOS ------------*/
+.produ{
+    display: flex;
+    flex-direction: row;
+    font-size: 35px;
+    padding-top: 150px;
+    color: #7119ad;
+}

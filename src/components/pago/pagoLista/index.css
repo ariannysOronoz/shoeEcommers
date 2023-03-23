@@ -1,0 +1,107 @@
+/*-----------------------------Metodo de Pago ---------------------*/
+.pago{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.metodoPago{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CardDetails{
+  display: flex;
+  padding-top: 150px;
+
+}
+
+.tarjetasAgredadas{
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+
+.tituloMetodoPago {
+  padding-top: 150px;
+  display: flex;
+  color: #7119ad;
+  font-size: 25px; 
+}
+
+.agregado{
+  display: flex;
+  justify-content: center;
+  color: #7119ad;
+  font-size: 25px;
+  
+}
+
+/*------------------------------Pago ------------------------------*/
+
+.agregarPago{
+  display: flex;
+  margin-top: 10px;
+}
+
+  .listaPagos {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.datosTarjetas{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-shadow: 1px 10px 10px 2px rgba(255, 2, 221, 0.1);
+  border: 5px solid transparent;
+  cursor: pointer;
+  border-radius: 30px;
+  align-self: center;
+  padding: 10px;
+}
+
+.eliminarTarjeta{
+  display: flex;
+  justify-content: center;
+}
+
+.btnCartao{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 95px;
+  height: 40px;
+}
+ 
+.btnCartao:active{
+    background-color: #cdade2;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.btnCartao:hover {
+    background-color: #cdade2;
+}
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+  
+input {
+    margin-top: 1%;
+    margin-left: 1%;
+    font-family: Montserrat, sans-serif;
+    padding: 0.5%;
+    /* border-radius: 7em; */
+    /* background-color: #ccd5fc; Green */
+    /* border: 0; */
+  }
+
+
+  
+

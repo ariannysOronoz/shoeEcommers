@@ -1,9 +1,9 @@
 import React from 'react'
-import { Header } from "./components/Header";
-import { Carrito } from "./components/Carrito";
+import { Header } from "./components/header/Header";
+import { Carrito } from "./components/carrito/Carrito";
 import {DataProvider} from './context/DataProvider';
 import { BrowserRouter as Router} from "react-router-dom";
-import Pages from "./components/Page.js";
+import Pages from "./components/page/Page.js";
 import "boxicons";
 
 function App() {
@@ -12,11 +12,11 @@ function App() {
     <DataProvider>
     <div className="App">
       <Router>
-      <Header />
-      <Carrito />
-      <Pages />
+        <Header />
+        <Carrito />
+        <Pages />
       </Router>
-    </div>
+    </div>s
     </DataProvider>
   );
 }

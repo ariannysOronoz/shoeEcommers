@@ -1,0 +1,24 @@
+/*-----------------INICIO-------------------*/
+.inicio{
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px ;
+}   
+.inicio h1{
+    font-size: 30px;
+    color: #7119ad;
+    text-decoration: underline;
+    display: flex;
+    justify-content: left;
+}
+.inicio h1:hover{
+    background-color: #cdade2;
+    font-weight: 600;
+}
+.inicio h1:hover{
+    font-weight: 600;
+    color: white;
+}
+.inicio img{
+    width: 100%;
+}

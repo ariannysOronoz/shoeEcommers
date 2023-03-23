@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import { DataContext } from "context/DataProvider";
-import { ProductoItem } from "./ProductoItem";
+import { ProductoItem } from "../productoItem/ProductoItem";
+import './index.css';
 
 export const ProductosList = () => {
 	const value = useContext(DataContext)

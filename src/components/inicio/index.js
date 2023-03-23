@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Portada from "images/inicio.jpg";
+import './index.css';
 
 export default function Inicio() {
     return (
