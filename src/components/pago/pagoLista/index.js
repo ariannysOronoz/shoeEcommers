@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './index.css';
 import img12 from "images/img12.jpg"
 import { CardDetails } from '../detalle/CardDetails';
+import {Card} from '../card/Card';
 
 export const PagoLista = () => {
 
@@ -14,6 +15,7 @@ export const PagoLista = () => {
     
 
     return (
+    <>
     <div className='pago'>
         <div className='metodoPago'>
             <h1 className='tituloMetodoPago'>METODO DE PAGO</h1>
@@ -39,6 +41,7 @@ export const PagoLista = () => {
                 </div>    
         </div>
     </div> 
+    </>
     );
 };
 

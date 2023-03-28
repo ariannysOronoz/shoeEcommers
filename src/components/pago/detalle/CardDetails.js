@@ -1,5 +1,6 @@
 import React, {useContext, useEffect, useState} from "react";
-import Card from 'react-credit-cards-2'
+//import Card from 'react-credit-cards-2'
+import {Card} from '../card/Card';
 import './index.css';
 import { Link } from "react-router-dom";
 import {
@@ -70,7 +71,7 @@ export const CardDetails = () => {
         <div className='App-payment'>
           <h1>Enter your payment details</h1>
           <h4>please input your information below</h4>
-          <Card className='cardImg' 
+          <Card 
             number={number}
             name={name}
             expiry={expiry}
