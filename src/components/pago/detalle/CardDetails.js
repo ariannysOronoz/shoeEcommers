@@ -37,6 +37,7 @@ export const CardDetails = () => {
     }
 
     const handleInputChange = ({ target }) => {
+      console.log(JSON.stringify(target.name))
       if (target.name === 'number') {
         setNumber(formatCreditCardNumber(target.value))
         return
@@ -76,7 +77,7 @@ export const CardDetails = () => {
             name={name}
             expiry={expiry}
             cvc={cvc}
-            focused={focused}
+            showFront={!(focused==="cvc")}
             callback={handleCallback}
           />
           <form ref={c => (setForm(c))} onSubmit={handleSubmit}>
@@ -102,8 +103,8 @@ export const CardDetails = () => {
                 name='number'
                 className='form-control'
                 placeholder='Card Number'
-                pattern='[\d| ]{16,22}'
-                maxLength='19'
+                pattern='[\d]{16,22}'
+                maxLength='16'
                 required
                 onChange={handleInputChange}
                 onFocus={handleInputFocus}
